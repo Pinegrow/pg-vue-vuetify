@@ -19,3 +19,4 @@
     <SampleCard />
   </main>
 </template>
+<style scoped></style>
