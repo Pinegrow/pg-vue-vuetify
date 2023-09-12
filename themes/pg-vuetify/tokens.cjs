@@ -1,9 +1,5 @@
 /* Pinegrow generated Design Panel Begin */
 
-/* eslint-disable */
-/* prettier-disable */
-/* @ts-nocheck */
-
 const pg_colors = {
   gray: {
     50: '#f9fafb',
@@ -102,60 +98,46 @@ const pg_colors = {
     900: '#831843',
   },
   primary: {
-    50: '#f8efeb',
-    100: '#f4dac9',
-    200: '#efc6a7',
-    300: '#e8b186',
-    400: '#df9d65',
-    500: '#d58a44',
-    600: '#c9761f',
-    700: '#b86c1c',
-    800: '#a7621a',
-    900: '#975917',
-    950: '#874f15',
-    DEFAULT: '#774612',
+    50: '#ebf0ee',
+    100: '#c9dbd7',
+    200: '#a8c7bf',
+    300: '#87b3a8',
+    400: '#659f92',
+    500: '#408b7c',
+    600: '#077867',
+    700: '#066e5e',
+    800: '#066456',
+    900: '#055a4d',
+    950: '#055045',
+    DEFAULT: '#04473d',
   },
   secondary: {
-    50: '#f0edeb',
-    100: '#e0d0c5',
-    200: '#ceb4a0',
-    300: '#bc997c',
-    400: '#a97e59',
-    500: '#946537',
-    600: '#7f4c15',
-    700: '#744613',
-    800: '#6a3f12',
-    900: '#5f3910',
-    950: '#55330e',
-    DEFAULT: '#4b2d0c',
+    50: '#ebf5f4',
+    100: '#cfeae6',
+    200: '#b2ded9',
+    300: '#95d3cc',
+    400: '#75c7bf',
+    500: '#50bcb3',
+    600: '#0fb0a6',
+    700: '#0ea198',
+    800: '#0d928a',
+    900: '#0c847d',
+    950: '#0a766f',
+    DEFAULT: '#096862',
   },
   tertiary: {
-    50: '#efedec',
-    100: '#d8d2cb',
-    200: '#c1b8ab',
-    300: '#aa9e8d',
-    400: '#94856f',
-    500: '#7e6c52',
-    600: '#685537',
-    700: '#5f4e32',
-    800: '#57472e',
-    900: '#4e4029',
-    950: '#463925',
-    DEFAULT: '#3e3221',
-  },
-  neutral: {
-    50: '#ebebeb',
-    100: '#b7b7b7',
-    200: '#868686',
-    300: '#585858',
-    400: '#2d2d2d',
-    500: '#000000',
-    600: '#000000',
-    700: '#000000',
-    800: '#000000',
-    900: '#000000',
-    950: '#000000',
-    DEFAULT: '#000000',
+    50: '#f1fdfc',
+    100: '#e1fcfa',
+    200: '#d0fbf7',
+    300: '#bff9f5',
+    400: '#adf8f2',
+    500: '#9af6f0',
+    600: '#84f4ed',
+    700: '#79dfd9',
+    800: '#6ecbc5',
+    900: '#63b7b2',
+    950: '#58a39f',
+    DEFAULT: '#4e908c',
   },
   success: {
     50: '#ecf0ec',
@@ -211,24 +193,41 @@ const pg_colors = {
     800: '#0271ae',
     900: '#02669d',
     950: '#015b8c',
-    975: '#015989',
     DEFAULT: '#5098d8',
+  },
+  neutral: {
+    50: '#ebebeb',
+    100: '#c2c2c2',
+    200: '#9b9b9b',
+    300: '#757575',
+    400: '#525252',
+    500: '#303030',
+    600: '#121212',
+    700: '#111111',
+    800: '#0f0f0f',
+    900: '#0e0e0e',
+    950: '#0c0c0c',
+    DEFAULT: '#0b0b0b',
   },
 }
 
 const pg_fonts = {
-  sans: ["'Fira Sans', sans-serif"],
-  serif: ["'Kalam', sans-serif"],
+  sans: ["'DM Sans', sans-serif"],
+  serif: ["'Inter', sans-serif"],
 }
 
 const pg_backgrounds = {
   'design-image':
-    "url('https://images.unsplash.com/photo-1563387852576-964bc31b73af?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE0fHx3YWxscGFwZXJ8ZW58MHx8fHwxNjg0MDMwOTQ5fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max')",
+    "url('https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGZhc2hpb24lMjBzaG9wcGluZ3xlbnwwfHx8fDE2OTQ1MTMyOTN8MA&ixlib=rb-4.0.3&q=85')",
   'design-image-large':
-    "url('https://images.unsplash.com/photo-1563387852576-964bc31b73af?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE0fHx3YWxscGFwZXJ8ZW58MHx8fHwxNjg0MDMwOTQ5fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max')",
+    "url('https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGZhc2hpb24lMjBzaG9wcGluZ3xlbnwwfHx8fDE2OTQ1MTMyOTN8MA&ixlib=rb-4.0.3&q=85')",
 }
 
 /* Pinegrow generated Design Panel End */
+
+/* eslint-disable */
+/* prettier-disable */
+/* @ts-nocheck */
 
 module.exports = {
   pg_colors,
