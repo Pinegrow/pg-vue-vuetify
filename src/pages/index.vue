@@ -16,6 +16,6 @@
 </script>
 <template>
   <main>
-    <SampleCard />
+    <span>This is the index page - Vue with Vuetify. A fresh start!</span>
   </main>
 </template>
