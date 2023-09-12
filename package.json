@@ -22,6 +22,7 @@
     "@vueuse/core": "^10.1.2",
     "@vueuse/head": "^1.1.26",
     "pinia": "^2.0.35",
+    "sass": "^1.66.1",
     "vue": "^3.3.0",
     "vue-router": "^4.1.6",
     "vuetify": "^3.3.15"

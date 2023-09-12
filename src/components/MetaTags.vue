@@ -4,6 +4,11 @@
   import { useHead, useSeoMeta } from 'unhead'
   import { useRoute } from 'vue-router/auto'
 
+  const fonts =
+    'https://fonts.googleapis.com/css?family=DM+Sans:400,500,700|Inter:100,200,300,400,500,600,700,800,900&display=swap'
+  const googleapis = 'https://fonts.googleapis.com'
+  const gstatic = 'https://fonts.gstatic.com'
+
   const { title, description } = site
   const route = useRoute()
 
@@ -48,6 +53,19 @@
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
+      { rel: 'dns-prefetch', href: googleapis },
+      { rel: 'dns-prefetch', href: gstatic },
+      { rel: 'preconnect', crossorigin: 'anonymous', href: googleapis },
+      { rel: 'preconnect', crossorigin: 'anonymous', href: gstatic },
+      {
+        rel: 'preload',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+        href: fonts,
+      },
+    ],
+    noscript: [
+      `<link rel="stylesheet" crossorigin="anonymous" href="${fonts}" />`,
     ],
   })
 </script>

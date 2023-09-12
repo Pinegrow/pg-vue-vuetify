@@ -79,9 +79,9 @@ export default defineConfig({
     }),
     Vuetify({
       /* If customizing sass variables of vuetify components */
-      // styles: {
-      //   configFile: 'assets/vuetify/settings.scss',
-      // },
+      styles: {
+        configFile: 'src/assets/vuetify/settings.scss',
+      },
       //...
     }),
   ],
