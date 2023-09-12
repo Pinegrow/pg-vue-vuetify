@@ -7,7 +7,7 @@
     "html": {
       "elements": [
         {
-          "name": "BaseIcon",
+          "name": "BaseIconDemo",
           "attributes": [
             {
               "name": "name",
