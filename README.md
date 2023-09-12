@@ -25,7 +25,7 @@ Clean code 😃, No lock-in - You are in control of your projects and developmen
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx giget@latest gh:pinegrow/pg-vue-vuetify my-vue-vuetify-app #project-name
+npx giget@latest gh:pinegrow/pg-vue-vuetify#blank my-vue-vuetify-app #project-name
 cd my-vue-vuetify-app
 npm install #or use pnpm
 ```
