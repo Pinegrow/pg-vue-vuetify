@@ -15,7 +15,5 @@
   })
 </script>
 <template>
-  <main>
-    <span>This is the index page - Vue with Vuetify. A fresh start!</span>
-  </main>
+  <main>A Fresh Start!</main>
 </template>
