@@ -42,13 +42,14 @@ export default defineConfig({
     // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
     AutoImportAPIs({
       include: [
-        /.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-        /.vue$/,
-        /.vue?vue/, // .vue
-        /.md$/, // .md
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.vue$/,
+        /\.vue\?vue/, // .vue
+        /\.md$/, // .md
+        /\.mdx$/, // .mdx
       ],
       imports: [
-        // 'vue',
+        'vue',
         VueRouterAutoImports, // Remove 'vue-router',
         // 'vue-i18n',
         // 'vue/macros',
@@ -81,9 +82,9 @@ export default defineConfig({
     }),
     Vuetify({
       /* If customizing sass variables of vuetify components */
-      styles: {
-        configFile: 'src/assets/vuetify/settings.scss',
-      },
+      // styles: {
+      //   configFile: 'src/assets/vuetify/settings.scss',
+      // },
       //...
     }),
   ],
