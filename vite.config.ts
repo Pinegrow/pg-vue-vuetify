@@ -11,7 +11,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 // import VueDevTools from 'vite-plugin-vue-devtools'
-import Vuetify from 'vite-plugin-vuetify'
+import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,8 +22,9 @@ export default defineConfig({
       vuetify: {
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
         configPath: 'vuetify.config.ts', // or file where vuetify is created
-        cssPath: '@/assets/css/main.css',
+        // themePath: false, // Set to false so that Design Panel is not used
         // utilities: false,
+        // restartOnConfigUpdate: true,
         restartOnThemeUpdate: true,
       },
     }),
@@ -35,18 +36,26 @@ export default defineConfig({
     /* IMPORTANT: Vue must be placed after VueRouter()  */
     Vue({
       include: [/\.vue$/, /\.md$/],
+      // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
+      template: {
+        transformAssetUrls,
+        compilerOptions: {
+          isCustomElement: (tag) => tag === 'lite-youtube',
+        },
+      },
     }),
     Layouts(),
     // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
     AutoImportAPIs({
       include: [
-        /.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-        /.vue$/,
-        /.vue?vue/, // .vue
-        /.md$/, // .md
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.vue$/,
+        /\.vue\?vue/, // .vue
+        /\.md$/, // .md
+        /\.mdx$/, // .mdx
       ],
       imports: [
-        // 'vue',
+        'vue',
         VueRouterAutoImports, // Remove 'vue-router',
         // 'vue-i18n',
         // 'vue/macros',
@@ -80,7 +89,7 @@ export default defineConfig({
     Vuetify({
       /* If customizing sass variables of vuetify components */
       // styles: {
-      //   configFile: 'assets/vuetify/settings.scss',
+      //   configFile: 'src/assets/vuetify/settings.scss',
       // },
       //...
     }),

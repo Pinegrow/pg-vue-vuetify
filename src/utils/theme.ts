@@ -6,7 +6,7 @@ import {
 } from '../../themes/pg-vuetify/tokens.mjs'
 
 // Customize light and dark themes
-const lightTheme: any = {
+const lightTheme: ThemeDefinition = {
   dark: false,
   colors: {
     primary: pg_colors.primary['500'],
@@ -21,19 +21,19 @@ const lightTheme: any = {
     neutral: pg_colors.neutral['500'],
 
     background: '#ffffff',
-    'on-background': pg_colors.neutral['900'],
+    'on-background': pg_colors.neutral['950'],
     surface: '#ffffff',
-    'on-surface': pg_colors.neutral['900'],
+    'on-surface': pg_colors.neutral['950'],
     'surface-variant': pg_colors.neutral['500'],
     'on-surface-variant': pg_colors.neutral['900'],
   },
   variables: {
-    'border-color': '#000000',
-    'border-opacity': 0.12,
+    // 'border-color': '#000000',
+    // 'border-opacity': 0.12,
   },
 }
 
-const darkTheme: any = {
+const darkTheme: ThemeDefinition = {
   dark: true,
   colors: {
     primary: pg_colors.primary['400'],
@@ -47,17 +47,17 @@ const darkTheme: any = {
     info: pg_colors.info['400'],
     neutral: pg_colors.neutral['400'],
 
-    background: pg_colors.neutral['950'],
+    background: pg_colors.neutral['900'],
     'on-background': pg_colors.neutral['50'],
-    surface: pg_colors.neutral['950'],
+    surface: pg_colors.neutral['900'],
     'on-surface': pg_colors.neutral['50'],
     'surface-variant': pg_colors.neutral['600'],
     'on-surface-variant': pg_colors.neutral['50'],
   },
 
   variables: {
-    'border-color': '#ffffff',
-    'border-opacity': 0.12,
+    // 'border-color': '#ffffff',
+    // 'border-opacity': 0.12,
   },
 }
 

@@ -14,10 +14,10 @@ export default {
     },
   },
 
-  ssr: {
-    clientWidth: 100,
-    // clientHeight: 100,
-  },
+  // ssr: {
+  //   clientWidth: 100,
+  //   // clientHeight: 100,
+  // },
 
   directives: [], // can take an array as well
 
