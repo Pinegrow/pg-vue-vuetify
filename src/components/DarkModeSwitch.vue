@@ -1,15 +1,26 @@
 <script setup lang="ts">
-  /* Vuetify useTheme will not work with SSR enabled, more info - https://vuetify-nuxt-module.netlify.app/guide/server-side-rendering.html#vuetify-themes */
-  // import { useCustomTheme } from '~/composables/custom-theme'
-  // const { isDark, toggleDark } = useCustomTheme()
+  // import { ssrClientHintsConfiguration } from 'virtual:vuetify-ssr-client-hints-configuration'
 
   import { isDark, toggleDark } from '@/composables/dark'
   import { useTheme } from 'vuetify'
 
+  // const ssrClientHints = useNuxtApp().$ssrClientHints
+  // const { width, height, md } = useDisplay()
   const theme = useTheme()
+
+  // const enableToogleTheme = computed(() => {
+  //   if (
+  //     ssrClientHintsConfiguration.prefersColorScheme &&
+  //     ssrClientHintsConfiguration.prefersColorSchemeOptions
+  //   )
+  //     return !ssrClientHintsConfiguration.prefersColorSchemeOptions
+  //       .useBrowserThemeOnly
+  //   return false
+  // })
+
   const toggleTheme = () => {
-    theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
     toggleDark()
+    theme.global.name.value = isDark.value ? 'dark' : 'light'
   }
 </script>
 <template>
