@@ -37,7 +37,12 @@ export default defineConfig({
     Vue({
       include: [/\.vue$/, /\.md$/],
       // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
-      template: { transformAssetUrls },
+      template: {
+        transformAssetUrls,
+        compilerOptions: {
+          isCustomElement: (tag) => tag === 'lite-youtube',
+        },
+      },
     }),
     Layouts(),
     // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
