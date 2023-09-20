@@ -1,5 +1,7 @@
 <script setup lang="ts">
   import { useHead } from 'unhead'
+  import { useHero } from '@/composables/hero'
+  const { heroImageSrc } = useHero()
 
   definePage({
     name: 'home',
