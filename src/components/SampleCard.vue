@@ -1,6 +1,9 @@
 <script setup lang="ts">
-  import { useHero } from '@/composables/hero'
-  const { heroImageSrc } = useHero()
+  import { pg_background_urls } from '~~/themes/pg-vuetify/tokens.mjs'
+
+  const heroImageSrc =
+    pg_background_urls['design-image-large'] ||
+    pg_background_urls['design-image']
 
   const availableTimeSlots = ['3.30PM', '4.20PM', '5.50PM', '6.00PM']
   const selectedTimeSlot = ref(0)
