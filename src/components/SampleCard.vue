@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import { ref } from 'vue'
   import { pg_background_urls } from '~~/themes/pg-vuetify/tokens.mjs'
 
   const heroImageSrc =
