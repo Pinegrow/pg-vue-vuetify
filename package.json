@@ -25,15 +25,15 @@
     "lite-youtube-embed": "^0.2.0",
     "pinia": "^2.0.35",
     "sass": "^1.66.1",
+    "vee-validate": "^4.11.6",
     "vue": "^3.3.0",
     "vue-router": "^4.1.6",
-    "vuetify": "^3.3.15",
-    "vee-validate": "^4.11.6"
+    "vuetify": "^3.3.15"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.64",
-    "@pinegrow/vite-plugin": "^3.0.18",
-    "@pinegrow/vuetify-plugin": "^3.0.34",
+    "@pinegrow/vite-plugin": "^3.0.21",
+    "@pinegrow/vuetify-plugin": "^3.0.42",
     "@rushstack/eslint-patch": "^1.2.0",
     "@tsconfig/node18": "^2.0.0",
     "@types/markdown-it-link-attributes": "^3.0.1",
