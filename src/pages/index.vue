@@ -20,8 +20,8 @@
   })
 </script>
 <template>
-  <main>
+  <div>
     <SampleCard />
-  </main>
+  </div>
 </template>
 <style scoped></style>
