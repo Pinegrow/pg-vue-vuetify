@@ -21,33 +21,10 @@ import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    liveDesigner({
-      iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
-      devtoolsKey: 'devtools',
-      //...
-      vuetify: {
-        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
-        configPath: 'vuetify.config.ts', // or file where vuetify is created
-        // themePath: false, // Set to false so that Design Panel is not used
-        // utilities: false,
-        // restartOnConfigUpdate: true,
-        restartOnThemeUpdate: true,
-      },
-      // plugins: [
-      //   {
-      //     name: 'My Awesome Lib 3.0',
-      //     key: 'my-awesome-lib',
-      //     pluginPath: fileURLToPath(
-      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
-      //     ),
-      //   },
-      // ],
-    }),
     VueRouter({
       // routesFolder: 'src/pages', // default
       dts: 'typed-router.d.ts',
     }),
-    // VueDevTools(),
     /* IMPORTANT: Vue must be placed after VueRouter()  */
     Vue({
       include: [/\.vue$/, /\.md$/],
@@ -152,6 +129,29 @@ export default defineConfig({
       //   configFile: 'src/assets/vuetify/settings.scss',
       // },
       //...
+    }),
+    // VueDevTools(),
+    liveDesigner({
+      iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
+      devtoolsKey: 'devtools',
+      //...
+      vuetify: {
+        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+        configPath: 'vuetify.config.ts', // or file where vuetify is created
+        // themePath: false, // Set to false so that Design Panel is not used
+        // utilities: false,
+        // restartOnConfigUpdate: true,
+        restartOnThemeUpdate: true,
+      },
+      // plugins: [
+      //   {
+      //     name: 'My Awesome Lib 3.0',
+      //     key: 'my-awesome-lib',
+      //     pluginPath: fileURLToPath(
+      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+      //     ),
+      //   },
+      // ],
     }),
   ],
   resolve: {
