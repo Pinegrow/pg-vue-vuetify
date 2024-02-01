@@ -28,8 +28,8 @@ export default defineConfig({
     /* IMPORTANT: Vue must be placed after VueRouter()  */
     Vue({
       include: [/\.vue$/, /\.md$/],
-      // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
       template: {
+        // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
         transformAssetUrls: {
           ...transformAssetUrls,
           'v-carousel-item': [
