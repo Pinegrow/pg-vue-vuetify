@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.64",
-    "@pinegrow/vite-plugin": "^3.0.52",
+    "@pinegrow/vite-plugin": "^3.0.56",
     "@pinegrow/vuetify-plugin": "^3.0.51",
     "@rushstack/eslint-patch": "^1.2.0",
     "@tsconfig/node18": "^2.0.0",
