@@ -1,0 +1,29 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "src/*",
+    "components.d.ts",
+    "auto-imports.d.ts",
+    "typed-router.d.ts",
+    "shims.d.ts",
+    "themes/**/*",
+    "vuetify.config.ts"
+  ],
+  "exclude": ["src/**/__tests__/*", "**/node_modules/**", "**/dist/**"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "~/*": ["src/*"],
+      "~~/*": ["*"]
+    },
+    "moduleResolution": "node",
+    "types": ["vite-plugin-vue-layouts/client", "vuetify"],
+    "allowJs": true,
+    "strict": false
+  }
+}
