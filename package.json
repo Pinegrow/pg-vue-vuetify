@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.64",
-    "@pinegrow/vite-plugin": "^3.0.56",
+    "@pinegrow/vite-plugin": "^3.0.60",
     "@pinegrow/vuetify-plugin": "^3.0.51",
     "@rushstack/eslint-patch": "^1.2.0",
     "@tsconfig/node18": "^2.0.0",
@@ -60,7 +60,7 @@
     "unplugin-vue-markdown": "^0.24.2",
     "unplugin-vue-router": "^0.6.4",
     "vite": "^4.4.9",
-    "vite-plugin-vue-devtools": "^0.0.22",
+    "vite-plugin-vue-devtools": "^7.3.6",
     "vite-plugin-vue-layouts": "^0.8.0",
     "vite-plugin-vuetify": "^1.0.2",
     "vue-tsc": "^1.6.4"
