@@ -25,7 +25,7 @@ Clean code 😃, No lock-in - You are in control of your projects and developmen
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx giget@latest gh:pinegrow/pg-vue-vuetify my-vue-vuetify-app #project-name
+npx giget@latest gh:pinegrow/pg-vue-vuetify#blank my-vue-vuetify-app #project-name
 cd my-vue-vuetify-app
 npm install #or use pnpm
 ```
@@ -115,7 +115,7 @@ Check out the [deployment documentation](https://vitejs.dev/guide/static-deploy.
 
 ### Devtools
 
-- [Vite Devtools](https://github.com/webfansplz/vite-plugin-vue-devtools) - A Vite plugin for Vue that enhances your DX (developer experience) with an amazing set of in-app features. This is an in-app alternative to browser-based/standalone Vue Devtools.
+- [Vite Devtools](https://devtools-next.vuejs.org/guide/vite-plugin) - A Vite plugin for Vue that enhances your DX (developer experience) with an amazing set of in-app features. This is an in-app alternative to browser-based/standalone Vue Devtools.
 - [Vue Devtools](https://devtools.vuejs.org/guide/installation.html#standalone) - Official devtools that can be used as a standalone app alongside Vue Designer. It's conditionally configured in `main.ts` (only during development).
   - **ACTION REQUIRED**: Currently deactivated. In `main.ts`, uncomment the top devtools related snippet to activate.
 
