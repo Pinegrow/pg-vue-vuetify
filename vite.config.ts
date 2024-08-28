@@ -32,25 +32,7 @@ export default defineConfig({
       include: [/\.vue$/, /\.md$/],
       template: {
         // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
-        transformAssetUrls: {
-          ...transformAssetUrls,
-          'v-carousel-item': [
-            'src',
-            'lazySrc',
-            'srcset',
-            ':src',
-            ':lazySrc',
-            ':srcset',
-          ],
-          'v-card': [
-            'image',
-            'prependAvatar',
-            'appendAvatar',
-            ':image',
-            ':prependAvatar',
-            ':appendAvatar',
-          ],
-        },
+        transformAssetUrls,
         compilerOptions: {
           isCustomElement: (tag) => tag === 'lite-youtube',
         },
@@ -178,6 +160,14 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '~': fileURLToPath(new URL('./src', import.meta.url)),
       '~~': fileURLToPath(new URL('./', import.meta.url)),
+    },
+  },
+
+  css: {
+    preprocessorOptions: {
+      sass: {
+        api: 'modern-compiler',
+      },
     },
   },
 })

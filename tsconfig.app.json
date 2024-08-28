@@ -21,8 +21,13 @@
       "~/*": ["src/*"],
       "~~/*": ["*"]
     },
-    "moduleResolution": "node",
-    "types": ["vite-plugin-vue-layouts/client", "vuetify"],
+    "moduleResolution": "Bundler",
+    "types": [
+      "vite-plugin-vue-layouts/client",
+      "unplugin-vue-router/client",
+      "vuetify",
+      "./typed-router.d.ts"
+    ],
     "allowJs": true,
     "strict": false
   }

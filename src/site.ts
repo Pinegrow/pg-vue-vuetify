@@ -8,8 +8,23 @@ export default {
   author: 'Pinegrow',
   url: 'https://pg-vue-vuetify.netlify.app',
   nav: [
-    { text: 'Home', link: '/' },
-    { text: `Quick Start`, link: '/quick-start' },
-    { text: 'Subscribe', link: '/subscribe' },
+    {
+      text: 'Home',
+      link: '/',
+      type: 'primary',
+      icon: 'i-mdi-home',
+    },
+    {
+      text: 'Quick Start',
+      link: '/quick-start',
+      type: 'primary',
+      icon: 'i-mdi-home',
+    },
+    {
+      text: 'Subscribe',
+      link: '/subscribe',
+      type: 'secondary',
+      icon: 'i-mdi-home',
+    },
   ],
 }
