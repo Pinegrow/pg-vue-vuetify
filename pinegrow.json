@@ -1,0 +1,92 @@
+{
+  "files": {
+    "src/pages/index.vue": {
+      "frameworks": [
+        "vue-router",
+        "@vue/devtools",
+        "vite-plugin-vue-devtools",
+        "vite-plugin-vue-layouts",
+        "unplugin-vue-router",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@unocss/preset-icons",
+        "@pinegrow/vite-plugin",
+        "@vitejs/plugin-vue",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "vuetify",
+        "tw.flowbite",
+        "pg.html"
+      ]
+    },
+    "src/components/SampleCard.vue": {
+      "frameworks": [
+        "vue-router",
+        "@vue/devtools",
+        "vite-plugin-vue-devtools",
+        "vite-plugin-vue-layouts",
+        "unplugin-vue-router",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@unocss/preset-icons",
+        "@pinegrow/vite-plugin",
+        "@vitejs/plugin-vue",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "vuetify",
+        "tw.flowbite",
+        "pg.html"
+      ]
+    }
+  },
+  "template_framework_id": "vue",
+  "open-pages": ["src/pages/index.vue", "src/components/SampleCard.vue"],
+  "urls": {
+    "src/pages/index.vue": { "open-page-views": [{ "w": 507, "h": 0 }] },
+    "src/components/SampleCard.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    }
+  },
+  "breakpoints": ["600px", "960px", "1280px", "1920px", "2560px"],
+  "frameworks": [
+    "vue-router",
+    "@vue/devtools",
+    "vite-plugin-vue-devtools",
+    "vite-plugin-vue-layouts",
+    "unplugin-vue-router",
+    "unplugin-auto-import",
+    "unplugin-vue-components",
+    "@unocss/preset-icons",
+    "@pinegrow/vite-plugin",
+    "@vitejs/plugin-vue",
+    "vue",
+    "app_designer",
+    "project",
+    "pg.insight.events",
+    "pg.vue.tree.painter",
+    "pg.css.grid",
+    "pg.image.overlay",
+    "pg.code-validator",
+    "pg.project.items",
+    "pg.asset.manager",
+    "vuetify",
+    "tw.flowbite",
+    "pg.html"
+  ]
+}
