@@ -1,7 +1,23 @@
+<script setup lang="ts">
+  const route = useRoute()
+
+  const pageMeta = computed(() => {
+    return {
+      title: route.meta.title,
+      description: route.meta.description,
+      ogImage: route.meta.ogImage,
+      canonicalUrl: route.meta.canonicalUrl || route.fullPath,
+      generator: route.meta.generator,
+      tags: route.meta.tags,
+    }
+  })
+
+  useHeadAndMeta(pageMeta)
+</script>
+
 <template>
   <div>
     <!-- <div class="container mx-auto"> -->
-    <HeadAndMeta />
     <v-app
       class="bg-background text-on-background"
       style="min-height: 100vh !important"

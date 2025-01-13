@@ -16,7 +16,7 @@
 </script>
 <template>
   <v-card width="360" class="elevation-4 mt-12 mx-auto">
-    <v-img :src="heroImageUrl" height="250" cover></v-img>
+    <v-img :src="heroImageUrl" height="250" cover />
     <v-card-item>
       <template #title>
         <div class="d-flex justify-space-between">
@@ -30,7 +30,7 @@
           icon="i-ic-round-local-fire-department"
           class="bg-red-darken-4 ml-2 text-red-darken-2"
           size="small"
-        ></v-icon>
+        />
       </template>
       <div class="align-center d-flex">
         <v-rating
@@ -39,7 +39,7 @@
           color="amber-darken-2"
           model-value="4.5"
           half-increments
-        ></v-rating>
+        />
         <span class="ml-2 mt-2 text-caption text-medium-emphasis"
           >4.5 (413)</span
         >
@@ -53,7 +53,7 @@
           indoor seats plus patio seating.</span
         >
       </div>
-      <v-divider class="mt-4"></v-divider>
+      <v-divider class="mt-4" />
     </v-card-text>
     <v-card-item>
       <template #title>
@@ -73,7 +73,7 @@
         variant="tonal"
         class="mb-2 ml-2"
         @click="showStatus(true)"
-      ></v-btn>
+      />
       <v-snackbar v-model="statusDisplay" timeout="2000">
         <span class="text-white w-100"
           >{{ availableTimeSlots[selectedTimeSlot] }} was reserved.</span
