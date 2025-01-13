@@ -5,26 +5,39 @@
 export default {
   title: 'Vue Designer',
   description: 'Vue Designer Vuetify - Quick start template',
+  logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
   url: 'https://pg-vue-vuetify.netlify.app',
-  nav: [
-    {
-      text: 'Home',
-      link: '/',
-      type: 'primary',
-      icon: 'i-mdi-home',
-    },
-    {
-      text: 'Quick Start',
-      link: '/quick-start',
-      type: 'primary',
-      icon: 'i-mdi-home',
-    },
-    {
-      text: 'Subscribe',
-      link: '/subscribe',
-      type: 'secondary',
-      icon: 'i-mdi-home',
-    },
-  ],
+  github: 'https://github.com/pinegrow/pg-vue-vuetify',
+  ogImageUrl: 'og-image.jpg', // absolute url (or) from public folder
+  generator: 'https://vuedesigner.com',
+  defaultLocale: 'en', // default
+  identity: {
+    type: 'Organization',
+  } as any,
+  twitter: '@vuedesigner',
+  trailingSlash: false, // default
+  titleSeparator: '|', // default
+
+  navs: {
+    primary: [
+      {
+        title: 'Home',
+        icon: 'i-mdi-home',
+        to: '/',
+      },
+      {
+        title: 'Quick Start',
+        icon: 'i-mdi-home',
+        to: '/quick-start',
+      },
+    ],
+    secondary: [
+      {
+        title: 'Subscribe',
+        icon: 'i-mdi-home',
+        to: '/subscribe',
+      },
+    ],
+  },
 }

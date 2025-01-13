@@ -1,3 +1,5 @@
+/// <reference types="vite-ssg" />
+
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
@@ -123,7 +125,6 @@ export default defineConfig({
     VueDevTools(),
     liveDesigner({
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
-      devtoolsKey: 'devtoolsKey',
       //...
       vuetify: {
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
@@ -144,6 +145,10 @@ export default defineConfig({
       // ],
     }),
   ],
+
+  ssr: {
+    noExternal: ['vuetify'],
+  },
 
   // build: {
   //   // Vite uses Rollup under the hold, so rollup options & plugins can be used for advanced usage

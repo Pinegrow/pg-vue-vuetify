@@ -1,5 +1,5 @@
 /* Pinegrow generated Design Panel Begin */
-/* eslint-disable */
+
 /* @ts-nocheck */
 
 const pg_colors = {
