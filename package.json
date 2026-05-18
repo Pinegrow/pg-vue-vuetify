@@ -35,7 +35,7 @@
   "devDependencies": {
     "@iconify/json": "^2.2.294",
     "@nuxt/eslint-config": "^0.7.5",
-    "@pinegrow/vite-plugin": "3.0.74",
+    "@pinegrow/vite-plugin": "3.0.75",
     "@pinegrow/vuetify-plugin": "3.0.54",
     "@tsconfig/node22": "^22.0.0",
     "@types/markdown-it-link-attributes": "^3.0.5",
